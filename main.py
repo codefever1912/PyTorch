@@ -1,7 +1,7 @@
 """
 attributes
 
-ndim -> no of dimensions(basically the number of brackets in the tensor representation)
+ndim -> no of dimensions(basically the number of bracket pairs in the tensor representation)
 shape -> shape of tensor
 dtype -> Default value depends on device architecture, if GPU is present or not
 __len__() -> returns length along the first dimesion / no of elements in the outermost dimension
@@ -24,8 +24,13 @@ torch.Tensor:
     linspace(start,end,size) >> creates 1d tensor elements between start and end(inclusive), with equal intervals b/w each element
     
 torch.nn
-    -> Module - a pre-built framework with built in frameworks for different operations
-              - different modules hav differnet functionalities which are then clubbed together
+    -> Module:
+        a pre-built framework with built in frameworks for different operations
+        different modules hav differnet functionalities which are then clubbed together
+    -> nn.CELoss():
+        calculates cross entropy loss between logits and ground truths
+        expects the logits to have long dtype
+
 """
 
 """"
